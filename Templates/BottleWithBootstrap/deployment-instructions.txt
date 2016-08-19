@@ -1,0 +1,30 @@
+Deploying to Elastic Beanstalk:
+*750 hours per month (i.e. one app at a time)
+
+* include a requirements.txt file to install relevant packages available via pip
+* Zip up source code
+* AWS Elastic Beanstalk - create application
+
+
+
+
+## Set up the virtual environment in Anaconda
+* `conda create -n myEnvName python=3.4`
+* add mandatory packages only: `conda install -n myEnvName myPackageName` no brackets on package name
+* freeze the requirements: `pip freeze > requirements.txt`
+* zip up the folder
+
+
+
+
+* To install needed stuff:
+	- Python, pip, ebcli: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html#eb-cli3-install-windows
+	- Managing python versions in Anaconda: http://conda.pydata.org/docs/py2or3.html#use-a-different-version-of-python
+	- virtual env: `pip install virtualenv`
+	- ssh: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html or https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
+* Use the Elastic Beanstalk Command Line Interface (must run on Python 3.4). pip install awsebcli
+	- in Anaconda, change environments; on my machine I named it python34. `activate python34`
+	- to test, `python --version` or `conda info --envs`
+	- test EB CLI is correct, `eb --version`
+	
+* 

@@ -31,14 +31,8 @@
 	  			<p>You are visiting the root 'yo' path!</p>
 	  		%end
 
-	  		<!--We can also embed Python code in a block-->
-	  		<%
-	  			test = 'test'
-	  			if test == 'test':
-	  				test = 'untested'
-	  			end
-	  		%>
-
+	  		<!--setting variables-->
+	  		%test = 'test'
 	  		<p>Test: {{test}}</p>
 
 			</div>
